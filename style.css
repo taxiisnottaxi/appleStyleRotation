@@ -1,0 +1,111 @@
+*{margin: 0; padding: 0;}
+*{box-sizing: border-box;}
+body{background: rgb(242,242,242);}
+/* .clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+} */
+a{
+    color: #0196e3;
+    text-decoration: none;
+}
+a:hover{
+    color: #0196e3;
+    text-decoration: underline rgb(1,150,227);
+}
+.main{
+    margin: 15px auto;
+    text-align: center;
+    width: 920px;
+}
+.main > h1,h2{
+    color: rgb(68,68,68);
+    font-weight: normal;
+    font-family: "Myriad Pro",Arial,Helvetica,sans-serif;
+}
+.main > h1{
+    font-size: 42px;
+    padding: 35px;
+}
+.main > h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: relative;
+    top: -19px;
+}
+.main > .viewport{
+    box-shadow: 0 0 3px #AAAAAA;
+    color: rgb(254,254,254);
+    border: 1px solid rgb(255,255,255);
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: inline-block;
+}
+.window{
+    width: 920px;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+.window > .wrapper{
+    display: flex;
+    /* width: 3680px; */
+    transition: all 1s;
+}
+.window > .wrapper > img{
+    width: 100%;
+    
+}
+.viewport > .navigator{
+    height: 45px;
+    background: url(./img/panel.jpg);
+}
+.viewport > .navigator > ul{
+    display: inline-flex;
+    justify-content: center;
+    height: 45px;
+    overflow: hidden;
+    border-left: 1px solid rgb(221,221,221);
+    border-right: 1px solid white;
+}
+.viewport > .navigator > ul > li{
+    list-style: none;
+    width: 60px;
+    height: 100%;
+    position: relative;
+    border-left: 1px solid white;
+    border-right: 1px solid rgb(221,221,221);
+}
+.viewport > .navigator > ul > li img{
+    position: absolute;
+    top: 10px;
+    bottom: 9px;
+    left: 18px;
+    right: 18px;
+}
+.viewport > .navigator > ul > li >.thumb_macbook{
+    left: 14px !important;
+    right: 14px !important;
+}
+.viewPort > .navigator > ul{
+    height: 45px;
+}
+p{
+    text-align: center;
+    color: #444444;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p:nth-child(2){
+    font-size: 13px;
+    line-height: 15px;
+    padding: 7px 10px 10px 10px;
+}
+p:nth-child(3){
+    line-height: 14px;
+    font-size: 10px;
+    padding: 10px;
+}
+.active-nav{
+    background: url(./img/active_bg.png);
+}
